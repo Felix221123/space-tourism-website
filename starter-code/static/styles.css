@@ -1,0 +1,1070 @@
+/* custom css reset */
+@import url("https://fonts.googleapis.com/css2?family=Bellefair:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+* {
+  font-size: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: clamp(1.5rem, 1.6vw, 1.6rem) clamp(2.0625rem, 2.1vw, 2.1rem);
+}
+header > #navbar-container > #menu-hamburger {
+  font-size: clamp(1.1rem, 1.15vw, 1.2rem);
+}
+header > #navbar-container > #main-navbar {
+  width: 68%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  display: none;
+}
+header > #navbar-container > #main-navbar > img#close-btn {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  z-index: 999;
+}
+header > #navbar-container > #main-navbar > div#menu-container {
+  position: relative;
+  top: 19%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(1.2rem, 1.3vw, 1.4rem);
+  display: flex;
+  flex-direction: column;
+}
+header > #navbar-container > #main-navbar > div#menu-container > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: clamp(1.8rem, 1.9vw, 2rem);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(1rem, 1.1vw, 1.15rem);
+  font-weight: 300;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  background: transparent;
+  text-transform: uppercase;
+  padding-left: clamp(1.8rem, 1.9vw, 2rem);
+  border: none;
+}
+header > #navbar-container > #main-navbar > div#menu-container > button > .num-navs {
+  margin-right: clamp(0.6rem, 0.7vw, 0.8rem);
+  font-weight: 700;
+}
+
+.all-transitions {
+  transition: all 0.5s;
+}
+
+.home-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  margin-top: clamp(1.7rem, 1.8vw, 2rem);
+  row-gap: clamp(4.5rem, 4.5vw, 5rem);
+}
+.home-body-container > .text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(1.5rem, 1.6vw, 1.7rem);
+}
+.home-body-container > .text-section > .first-text {
+  color: #D0D6F9;
+  line-height: auto;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  text-transform: uppercase;
+}
+.home-body-container > .text-section > .space-text {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: clamp(5rem, 5.15vw, 5.15rem);
+  line-height: 6.25rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: clamp(1rem, 1.2vw, 1.3rem);
+}
+.home-body-container > .text-section > .underspace-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9375rem, 0.95vw, 0.95rem);
+  line-height: 2rem;
+  color: #D0D6F9;
+  text-align: center;
+  font-weight: 300;
+  font-size: clamp(0.9375rem, 1vw, 1.1rem);
+  line-height: 1.5625rem;
+  margin-top: clamp(0.3rem, 0.4vw, 0.5rem);
+  padding: 0rem clamp(4rem, 4.5vw, 5rem);
+}
+.home-body-container #circle-explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.3vw, 1.3rem);
+  text-transform: uppercase;
+}
+
+.text-section-moon {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: auto;
+  letter-spacing: 2.7px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.text-section-moon .nums {
+  opacity: 0.3;
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.home-container-destination-moon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(1rem, 1.2vw, 1.3rem);
+}
+.home-container-destination-moon > .moon-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-container-destination-moon > .moon-image-container #planet-image-style {
+  max-width: 45.5%;
+  max-height: clamp(19rem, 20vw, 21rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-container-destination-moon > .navbar-section-with-decription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(1.2rem, 1.3vw, 1.3rem);
+}
+.home-container-destination-moon > .navbar-section-with-decription > .navbar-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: clamp(1.3rem, 1.5vw, 1.5rem);
+       column-gap: clamp(1.3rem, 1.5vw, 1.5rem);
+}
+.home-container-destination-moon > .navbar-section-with-decription > .navbar-section > button {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.9vw, 0.92rem);
+  text-transform: uppercase;
+  color: #D0D6F9;
+  text-decoration: none;
+  letter-spacing: 2.36px;
+  background: transparent;
+  border: none;
+  height: 1.8rem;
+}
+.home-container-destination-moon > .navbar-section-with-decription > .navbar-section > button:hover {
+  border-bottom: 0.1875rem solid #FFFFFF;
+  opacity: 0.5;
+}
+.home-container-destination-moon > .navbar-section-with-decription > .navbar-section > button.active_moon-btn {
+  border-bottom: 0.1875rem solid #FFFFFF;
+}
+.home-container-destination-moon > .navbar-section-with-decription > #header-section-txt {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 3.6vw, 3.6rem);
+  line-height: auto;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: clamp(0.4rem, 0.5vw, 0.5rem);
+  margin-bottom: clamp(0.4rem, 0.5vw, 0.5rem);
+}
+.home-container-destination-moon > .navbar-section-with-decription > #text-section-moon {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9375rem, 0.95vw, 0.95rem);
+  line-height: 2rem;
+  color: #D0D6F9;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5625rem;
+  padding: 0rem clamp(2rem, 2.1vw, 2.2rem);
+}
+.home-container-destination-moon > .navbar-section-with-decription .bottom-thin-line {
+  margin-top: clamp(1.5rem, 1.6vw, 1.6rem);
+  width: 87.2%;
+  height: 0.001rem;
+  background-color: #383B4B;
+  opacity: 0.1;
+  margin-bottom: clamp(1rem, 1.1vw, 1.1rem);
+}
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: clamp(1.3rem, 1.5vw, 1.6rem);
+  row-gap: 1.3rem;
+}
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase > .distance-showcase,
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase .time-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: clamp(0.6rem, 0.7vw, 0.8rem);
+}
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase > .distance-showcase > #same-style-showcase,
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase .time-showcase > #same-style-showcase {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(0.875rem, 0.9vw, 0.9rem);
+  color: #D0D6F9;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.36px;
+  line-height: auto;
+}
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase > .distance-showcase > #dist-num, .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase > .distance-showcase #time-num,
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase .time-showcase > #dist-num,
+.home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase .time-showcase #time-num {
+  font-family: "Bellefair", serif;
+  font-weight: 300;
+  font-size: clamp(1.75rem, 1.8vw, 1.8rem);
+  color: #FFFFFF;
+  line-height: auto;
+  text-transform: uppercase;
+}
+
+.home-container-crew-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.home-container-crew-section > #individual-image-section {
+  margin-top: clamp(1.55rem, 1.6vw, 1.7rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.08rem solid #383B4B;
+  border-bottom-width: 90%;
+  width: 90%;
+}
+.home-container-crew-section > #individual-image-section > #crew-image-style {
+  max-width: 48%;
+  max-height: clamp(19rem, 20vw, 21rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-container-crew-section .text-crew-section {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  margin-top: clamp(1.4rem, 1.5vw, 1.55rem);
+}
+.home-container-crew-section .text-crew-section > .dots-changing-slides {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.home-container-crew-section .text-crew-section > .dots-changing-slides > button {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: #979797;
+  border: none;
+}
+.home-container-crew-section .text-crew-section > .dots-changing-slides > button:hover {
+  background-color: white;
+  opacity: 0.7;
+}
+.home-container-crew-section .text-crew-section > .dots-changing-slides > button.active_dot_btn {
+  background-color: white;
+}
+.home-container-crew-section .text-crew-section > .actual-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(1.4rem, 1.5vw, 1.55rem);
+}
+.home-container-crew-section .text-crew-section > .actual-text-section > #role-section {
+  font-family: "Bellefair", serif;
+  font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+  font-weight: 500;
+  line-height: auto;
+  color: #FFFFFF;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin-bottom: clamp(0.5rem, 0.6vw, 0.7rem);
+}
+.home-container-crew-section .text-crew-section > .actual-text-section > #individual-name {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 3.6vw, 3.6rem);
+  line-height: auto;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 1.6vw, 1.65rem);
+  margin-bottom: clamp(1.2rem, 1.3vw, 1.35rem);
+}
+.home-container-crew-section .text-crew-section > .actual-text-section > #individual-description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9375rem, 0.95vw, 0.95rem);
+  line-height: 2rem;
+  color: #D0D6F9;
+  font-size: clamp(1rem, 1.1vw, 1.15rem);
+  color: #D0D6F9;
+  text-align: center;
+  line-height: 1.5625rem;
+  font-weight: 300;
+  padding: 0rem clamp(2.6rem, 2.7vw, 3rem);
+  margin-bottom: clamp(1.5rem, 1.6vw, 1.7rem);
+}
+
+.home-container-section-tech {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  margin-top: clamp(2rem, 2.2vw, 2.25rem);
+}
+.home-container-section-tech > .tech-image-container {
+  position: relative;
+  width: 100%;
+  max-height: 10rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-container-section-tech > .tech-image-container > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.home-container-section-tech .text-tech-section {
+  margin-top: clamp(1.5rem, 1.55vw, 1.6rem);
+}
+.home-container-section-tech .text-tech-section > .num-changing-slides {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  margin-bottom: clamp(1.5rem, 1.55vw, 1.6rem);
+}
+.home-container-section-tech .text-tech-section > .num-changing-slides > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.09rem solid hsla(0, 0%, 100%, 0.2);
+  color: #FFFFFF;
+  font-family: "Bellefair", serif;
+  font-weight: 300;
+  font-size: clamp(0.99rem, 1.05vw, 1.1rem);
+  background: transparent;
+}
+.home-container-section-tech .text-tech-section > .num-changing-slides > button:hover {
+  border-color: #FFFFFF;
+}
+.home-container-section-tech .text-tech-section > .describing-tech-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-container-section-tech .text-tech-section > .describing-tech-page > .term-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2.36px;
+  line-height: auto;
+  font-size: clamp(0.875rem, 0.9vw, 0.95rem);
+  color: #D0D6F9;
+  text-transform: uppercase;
+  margin-bottom: clamp(0.6rem, 0.7vw, 0.8rem);
+}
+.home-container-section-tech .text-tech-section > .describing-tech-page > #tech-topic {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-size: clamp(3.5rem, 3.6vw, 3.6rem);
+  line-height: auto;
+  color: #FFFFFF;
+  font-size: clamp(1.5rem, 1.6vw, 1.7rem);
+  text-transform: uppercase;
+  line-height: auto;
+  margin-bottom: clamp(0.6rem, 0.7vw, 0.8rem);
+}
+.home-container-section-tech .text-tech-section > .describing-tech-page > #paragraph-text-description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.9375rem, 0.95vw, 0.95rem);
+  line-height: 2rem;
+  color: #D0D6F9;
+  text-align: center;
+  line-height: 25px;
+  font-size: clamp(0.9375rem, 0.98vw, 1rem);
+  font-weight: 300;
+  padding: 0rem clamp(2rem, 2.2vw, 2.3rem);
+}
+@keyframes menu-close {
+  from {
+    right: 0;
+    opacity: 1;
+  }
+  to {
+    right: 255px;
+    opacity: 0;
+  }
+}
+@keyframes menu-open {
+  from {
+    right: 255px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 376px) {
+  #body-for-indexhtml {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #body-for-destination {
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  #body-for-tech {
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #body-for-crew {
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+@media (min-width: 376px) {
+  #body-for-indexhtml {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  #body-for-destination {
+    background-image: url(../assets/destination/background-destination-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  #body-for-tech {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  #body-for-crew {
+    background-image: url(../assets/crew/background-crew-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    width: 95%;
+    margin: 0;
+    position: relative;
+    right: -5%;
+    height: clamp(6rem, 6.1vw, 6rem);
+  }
+  header > #navbar-container > #menu-hamburger {
+    display: none;
+  }
+  header > #navbar-container > #main-navbar {
+    width: 28.125rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header > #navbar-container > #main-navbar > div#menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    -moz-column-gap: clamp(1.1rem, 1.2vw, 1.3rem);
+         column-gap: clamp(1.1rem, 1.2vw, 1.3rem);
+    height: 100%;
+  }
+  header > #navbar-container > #main-navbar > div#menu-container > button {
+    padding-left: clamp(0.7rem, 0.8vw, 0.9rem);
+    height: 100%;
+  }
+  header > #navbar-container > #main-navbar > div#menu-container > button > .num-navs {
+    display: none;
+  }
+  header > #navbar-container > #main-navbar > div#menu-container > a.active_home_btn {
+    border-bottom: 0.1875rem solid #FFFFFF;
+  }
+  header > #navbar-container > #main-navbar > img#close-btn {
+    display: none;
+  }
+  .home-body-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11%;
+    row-gap: clamp(12rem, 13vw, 14rem);
+  }
+  .home-body-container > .text-section {
+    margin-top: clamp(2rem, 2.5vw, 3rem);
+  }
+  .home-body-container > .text-section > .first-text {
+    font-size: clamp(1.25rem, 1.3vw, 1.3rem);
+    letter-spacing: 3.38px;
+  }
+  .home-body-container > .text-section > .space-text {
+    font-size: clamp(9.375rem, 9.5vw, 9.5rem);
+    line-height: 150px;
+  }
+  .home-body-container > .text-section > .underspace-text {
+    font-size: clamp(1rem, 1.15vw, 1.2rem);
+    line-height: 28px;
+    padding: 0rem clamp(13rem, 14vw, 15rem);
+    font-family: "Barlow Condensed", sans-serif;
+    margin-top: clamp(0.6rem, 0.8vw, 1rem);
+    font-stretch: expanded;
+  }
+  .home-body-container #circle-explore {
+    width: 15.125rem;
+    height: 15.125rem;
+    font-size: clamp(2rem, 2.1vw, 2.2rem);
+    letter-spacing: 2px;
+  }
+  .text-section-moon {
+    margin-top: clamp(2.4rem, 2.5vw, 3rem);
+    font-size: clamp(1.25rem, 1.3vw, 1.3rem);
+    letter-spacing: 3.38px;
+    text-align: left;
+    margin-left: clamp(2.5rem, 2.6vw, 2.7rem);
+  }
+  .home-container-destination-moon {
+    margin-top: clamp(2rem, 2.2vw, 2.3rem);
+  }
+  .home-container-destination-moon > .moon-image-container #planet-image-style {
+    max-width: 75%;
+    max-height: clamp(25rem, 27vw, 28rem);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-container-destination-moon > .navbar-section-with-decription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: clamp(1.8rem, 1.9vw, 2rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .navbar-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: clamp(2rem, 2.2vw, 2.3rem);
+         column-gap: clamp(2rem, 2.2vw, 2.3rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .navbar-section > button {
+    font-size: clamp(1rem, 1.15vw, 1.2rem);
+    height: 2.5rem;
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > #header-section-txt {
+    margin-top: clamp(1.5rem, 1.6vw, 1.7rem);
+    margin-bottom: clamp(1.2rem, 1.3vw, 1.4rem);
+    font-size: clamp(5rem, 5.2vw, 5.3rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > #text-section-moon {
+    font-size: clamp(1rem, 1.15vw, 1.2rem);
+    line-height: 28px;
+    font-stretch: expanded;
+    padding: 0rem clamp(10rem, 10.1vw, 10.2rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .bottom-thin-line {
+    margin-top: clamp(1.9rem, 2vw, 2rem);
+    margin-bottom: clamp(1.4rem, 1.5vw, 1.6rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: clamp(6rem, 6.3vw, 6.5rem);
+         column-gap: clamp(6rem, 6.3vw, 6.5rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase > .distance-showcase,
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase .time-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: clamp(0.9rem, 0.95vw, 1rem);
+  }
+  .home-container-crew-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home-container-crew-section > #individual-image-section {
+    position: relative;
+    bottom: 0;
+  }
+  .home-container-crew-section > #individual-image-section > #crew-image-style {
+    max-width: 85%;
+    max-height: clamp(34rem, 34.5vw, 35rem);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-container-crew-section .text-crew-section {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    margin-top: clamp(1.8rem, 1.9vw, 2rem);
+  }
+  .home-container-crew-section .text-crew-section > .actual-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-container-crew-section .text-crew-section > .actual-text-section > #role-section {
+    font-size: clamp(1.5rem, 1.6vw, 1.7rem);
+    margin-bottom: clamp(0.8rem, 0.9vw, 0.95rem);
+  }
+  .home-container-crew-section .text-crew-section > .actual-text-section > #individual-name {
+    font-size: clamp(2.5rem, 2.6vw, 2.7rem);
+    margin-bottom: clamp(1.4rem, 1.5vw, 1.55rem);
+  }
+  .home-container-crew-section .text-crew-section > .actual-text-section > #individual-description {
+    font-size: clamp(1rem, 1.15vw, 1.2rem);
+    font-stretch: expanded;
+    padding: 0rem clamp(9.8rem, 9.9vw, 10rem);
+    margin-bottom: clamp(1.5rem, 1.6vw, 1.7rem);
+  }
+  .home-container-section-tech {
+    margin-top: clamp(3.1rem, 3.2vw, 3.3rem);
+  }
+  .home-container-section-tech > .tech-image-container {
+    width: 100%;
+    max-height: 18rem;
+  }
+  .home-container-section-tech > .tech-image-container > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .home-container-section-tech .text-tech-section {
+    margin-top: clamp(2.8rem, 2.85vw, 2.9rem);
+  }
+  .home-container-section-tech .text-tech-section > .num-changing-slides {
+    margin-bottom: clamp(2.7rem, 2.75vw, 2.7rem);
+  }
+  .home-container-section-tech .text-tech-section > .num-changing-slides > button {
+    width: 3.75rem;
+    height: 3.75rem;
+    font-size: clamp(1.4rem, 1.45vw, 1.5rem);
+  }
+  .home-container-section-tech .text-tech-section > .describing-tech-page .term-text {
+    font-size: clamp(1.1rem, 1.2vw, 1.25rem);
+    letter-spacing: 2.7px;
+    margin-bottom: clamp(0.8rem, 0.9vw, 1rem);
+  }
+  .home-container-section-tech .text-tech-section > .describing-tech-page > #tech-topic {
+    font-size: clamp(2.5rem, 2.7vw, 2.9rem);
+    margin-bottom: clamp(0.8rem, 0.9vw, 1rem);
+  }
+  .home-container-section-tech .text-tech-section > .describing-tech-page > #paragraph-text-description {
+    line-height: 28px;
+    font-size: clamp(1.1rem, 1.15vw, 1.2rem);
+    font-stretch: expanded;
+    padding: 0rem clamp(9rem, 9.5vw, 9.8rem);
+  }
+}
+@media (min-width: 1439px) {
+  body {
+    overflow: hidden;
+  }
+  header {
+    position: relative;
+    top: 5%;
+  }
+  header > #navbar-container > #main-navbar {
+    position: relative;
+    width: clamp(51.875rem, 52vw, 53rem);
+    height: clamp(6rem, 6.15vw, 6.3rem);
+  }
+  header > #navbar-container > #main-navbar > div#menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    -moz-column-gap: clamp(3.4rem, 3.5vw, 3.55rem);
+         column-gap: clamp(3.4rem, 3.5vw, 3.55rem);
+    height: 100%;
+  }
+  header > #navbar-container > #main-navbar > div#menu-container > button {
+    padding-left: 0rem;
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: clamp(0.4rem, 0.45vw, 5rem);
+         column-gap: clamp(0.4rem, 0.45vw, 5rem);
+  }
+  header > #navbar-container > #main-navbar > div#menu-container > button > .num-navs {
+    display: block;
+  }
+  header > #navbar-container > #main-navbar > div#menu-container > button:hover {
+    border-bottom: 0.3rem solid #FFFFFF;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  header .thin-line {
+    width: clamp(29.5625rem, 30vw, 31rem);
+    height: 1px;
+    background-color: #FFFFFF;
+    opacity: 0.3;
+    z-index: 9999999;
+    position: relative;
+    left: 3%;
+  }
+  .home-body-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.48fr 0.3fr;
+    align-items: flex-end;
+    margin-top: 15rem;
+    row-gap: 0rem;
+    -moz-column-gap: 8rem;
+         column-gap: 8rem;
+  }
+  .home-body-container > .text-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: clmap(7rem, 7.5vw, 7.5rem);
+    position: relative;
+  }
+  .home-body-container > .text-section > .first-text {
+    width: 100%;
+    text-align: left;
+    left: 0;
+    font-size: clamp(1.75rem, 1.8vw, 1.8rem);
+  }
+  .home-body-container > .text-section > .space-text {
+    width: 100%;
+    text-align: left;
+    margin-top: clamp(2rem, 2.5vw, 3rem);
+  }
+  .home-body-container > .text-section > .underspace-text {
+    text-align: left;
+    padding: 0rem 30% 0rem 0rem;
+    font-size: clamp(1.125rem, 1.2vw, 1.3rem);
+  }
+  .home-body-container > #circle-explore {
+    width: 17.125rem;
+    height: 17.125rem;
+    z-index: 9999;
+  }
+  .text-section-moon {
+    font-size: clamp(1.75rem, 1.8vw, 1.8rem);
+    margin-top: 8%;
+    margin-left: 12%;
+  }
+  .home-container-destination-moon {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+  .home-container-destination-moon > .moon-image-container {
+    margin-top: clamp(5rem, 5.5vw, 6rem);
+    width: 100%;
+    height: 100%;
+  }
+  .home-container-destination-moon > .moon-image-container #planet-image-style {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .home-container-destination-moon > .navbar-section-with-decription {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .navbar-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: clamp(1.5rem, 1.6vw, 1.7rem);
+         column-gap: clamp(1.5rem, 1.6vw, 1.7rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > #text-section-moon {
+    text-align: left;
+    padding: 0rem 32% 0rem 0rem;
+    font-size: clamp(1.125rem, 1.2vw, 1.25rem);
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase {
+    margin-top: 1rem;
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase > .distance-showcase,
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase .time-showcase {
+    display: block;
+    text-align: left;
+  }
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase > .distance-showcase > #same-style-showcase,
+  .home-container-destination-moon > .navbar-section-with-decription > .distance-time-showcase .time-showcase > #same-style-showcase {
+    margin-bottom: 0.7rem;
+  }
+  .home-container-crew-section {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.48fr 0.35fr;
+    align-items: center;
+  }
+  .home-container-crew-section > #individual-image-section {
+    width: 100%;
+    margin-top: 0;
+    height: 44.5rem;
+  }
+  .home-container-crew-section > #individual-image-section > #crew-image-style {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .home-container-crew-section > .text-crew-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    position: relative;
+  }
+  .home-container-crew-section > .text-crew-section > .actual-text-section > #role-section {
+    width: 100%;
+    text-align: left;
+    font-size: clamp(2rem, 2.1vw, 2.2rem);
+  }
+  .home-container-crew-section > .text-crew-section > .actual-text-section > #individual-name {
+    width: 100%;
+    font-size: clamp(3.5rem, 3.6vw, 3.7rem);
+  }
+  .home-container-crew-section > .text-crew-section > .actual-text-section > #individual-description {
+    width: 100%;
+    font-size: clamp(1.125rem, 1.2vw, 1.2rem);
+    text-align: left;
+    padding: 0rem 25% 0rem 0rem;
+    line-height: 32px;
+  }
+  .home-container-crew-section > .text-crew-section > .dots-changing-slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+  .home-container-crew-section > .text-crew-section > .dots-changing-slides button {
+    width: 0.9375rem;
+    height: 0.9375rem;
+  }
+  .home-container-section-tech {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+  }
+  .home-container-section-tech > .tech-image-container {
+    width: 50%;
+    max-height: 32.9375rem;
+    overflow: auto;
+    display: block;
+  }
+  .home-container-section-tech > .tech-image-container > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-container-section-tech .text-tech-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+    align-items: center;
+  }
+  .home-container-section-tech .text-tech-section > .num-changing-slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.5rem;
+  }
+  .home-container-section-tech .text-tech-section > .num-changing-slides > button {
+    width: 5rem;
+    height: 5rem;
+  }
+  .home-container-section-tech .text-tech-section .describing-tech-page {
+    width: 60%;
+    align-items: flex-start;
+  }
+  .home-container-section-tech .text-tech-section .describing-tech-page > #tech-topic {
+    font-size: clamp(3.5rem, 3.7vw, 3.7rem);
+  }
+  .home-container-section-tech .text-tech-section .describing-tech-page > #paragraph-text-description {
+    text-align: left;
+    padding: 0rem 32% 0rem 0rem;
+  }
+}
+@media (min-width: 1439px) {
+  #body-for-indexhtml {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  #body-for-destination {
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  #body-for-tech {
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+  #body-for-crew {
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
