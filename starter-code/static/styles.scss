@@ -1091,7 +1091,7 @@ header{
         > .text-crew-section{
             // background-color: red;
             @include flex(column);
-            row-gap: 5rem;
+            row-gap: 3.5rem;
             position: relative;
 
             > .actual-text-section{
