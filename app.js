@@ -63,26 +63,25 @@ if (screenSize <= 767) {
 
 
 //keeping the button active if users are switching between pages
-if (screenSize >= 768) {
-    menuNavs.forEach(eachNavbBtn => {
-        eachNavbBtn.addEventListener('click', function () {
+
+menuNavs.forEach(eachNavbBtn => {
+    eachNavbBtn.addEventListener('click', function () {
 
 
-
-            menuNavs.forEach(eachBtn => {
-                eachBtn.style.borderBottom = ''
-                eachNavbBtn.classList.remove('all-transitions')
-
-            })
-
-            eachNavbBtn.style.borderBottom = '0.3rem solid #FFFFFF'
-            eachNavbBtn.classList.add('all-transitions')
-
-            window.location.href = eachNavbBtn.dataset.href;
+        menuNavs.forEach(eachBtn => {
+            eachBtn.style.borderBottom = ''
+            eachNavbBtn.classList.remove('all-transitions')
 
         })
+
+        eachNavbBtn.style.borderBottom = '0.3rem solid #FFFFFF'
+        eachNavbBtn.classList.add('all-transitions')
+
+        window.location.href = eachNavbBtn.dataset.href;
+
     })
-}
+})
+
 
 
 
@@ -355,21 +354,6 @@ document.addEventListener("DOMContentLoaded", function() {
             eachBtn.style.border = 'none'
         })
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     //using fetch api to retrieve data from the json file 
