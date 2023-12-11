@@ -842,7 +842,7 @@ header > #navbar-container > #main-navbar > div#menu-container > button > .num-n
     transition: 0.5s;
   }
   header .thin-line {
-    width: clamp(29.5625rem, 30vw, 31rem);
+    width: 40%;
     height: 1px;
     background-color: #FFFFFF;
     opacity: 0.3;

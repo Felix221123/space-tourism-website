@@ -84,6 +84,7 @@
 //mobile workflow first
 
 header{
+    // width: 100%;
     @include flex-centered-navs();
     margin: clamp(1.3rem , 1.35vw , 1.4rem) clamp(2.0625rem , 2.1vw , 2.1rem);
     
@@ -918,6 +919,7 @@ header{
 
     //desktop header section
     header{
+        // width: 100%;
         position: relative;
         top:5%;
         // background-color: red;
@@ -956,7 +958,7 @@ header{
         }
 
         .thin-line{
-            width:clamp(29.5625rem , 30vw , 31rem);
+            width:40%;
             height: 1px;
             background-color: $clr-white;
             opacity: 0.3;
